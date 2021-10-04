@@ -1,0 +1,139 @@
+ul {
+  background: black;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+* {
+  margin: 0%;
+}
+
+li {
+  margin-right: 0%;
+  display: inline-block;
+  padding: top 20px;
+}
+
+a {
+  font-size: xx-large;
+  padding: 20px;
+  text-decoration: unset;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  padding-top: 113px;
+  font-size: 34pt;
+  color: rgb(252, 252, 252);
+  text-align: center;
+  background-color: blue;
+  right: 0%;
+  font-family: Arial, Helvetica;
+}
+h2 {
+  font-size: 30pt;
+}
+
+form {
+  padding-top: 113px;
+  text-align: center;
+  display: inline-block;
+}
+
+body {
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+article {
+  padding: 10px;
+  width: 30%;
+  background-color: #f1f1f1;
+  height: 300px;
+  float: right;
+}
+iframe {
+  display: inline-block;
+  background-color: blue;
+}
+img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+table {
+  padding-top: 113px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.heading1 {
+  text-align: left;
+}
+.discord {
+  padding-top: 113px;
+}
+section {
+  border: white;
+  border-image-source: url(https://www.publicdomainpictures.net/pictures/260000/nahled/abstract-golden-brown-background.jpg);
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+.dark {
+  background-color: black;
+}
+.image {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+p {
+  text-align: center;
+  background: rgba(144, 19, 254, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  color: whitesmoke;
+  text-emphasis: inherit;
+}
+div.section {
+  background-color: black;
+}
