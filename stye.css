@@ -8,14 +8,6 @@ h2 {
   color: wheat;
   font-size: 50pt;
 }
-.flex-container {
-  display: inline-block;
-  flex-direction: row;
-  width: 100%;
-}
-.flex-container > div {
-  background-color: orange;
-}
 * {
   margin: 0px;
 }
@@ -84,6 +76,12 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a:hover {
+li:hover {
   background-color: gray;
+}
+p {
+  padding: 10px;
+}
+nav {
+  padding: 20px;
 }
