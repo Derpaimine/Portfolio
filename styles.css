@@ -54,13 +54,22 @@ a {
 }
 
 h1 {
-  padding-top: 113px;
+  padding-top: 130px;
   font-size: 34pt;
   color: rgb(252, 252, 252);
   text-align: center;
-  background-color: blue;
   right: 0%;
   font-family: Arial, Helvetica;
+  animation-name: slideright;
+  animation-duration: 3s;
+}
+@keyframes slideright {
+  from {
+    transform: translateX(800px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 h2 {
   font-size: 30pt;
@@ -73,7 +82,7 @@ form {
 }
 
 body {
-  background-color: blue;
+  background-image: url(/backgroundweb.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -96,11 +105,27 @@ img {
   margin-right: auto;
   width: 20%;
 }
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(192, 0, 209, 0.5);
+  padding: 20px;
+  animation-name: Slideup;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+@keyframes Slideup {
+  from {
+    transform: translateY(700px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 table {
   padding-top: 113px;
@@ -147,4 +172,87 @@ p {
 }
 div.section {
   background-color: black;
+}
+.text-align {
+  text-align: left;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+.Background-glass {
+  background: rgba(253, 249, 253, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(8, 20, 179, 0.638);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 3px solid rgba(90, 3, 3, 0.18);
+  padding: 50px;
+}
+input {
+  width: 500px;
+  height: 100px;
+  background: rgba(5, 5, 119, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  font-size: 20pt;
+}
+textarea {
+  width: 200px;
+  background: rgba(5, 5, 119, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+h1 {
+  margin: 0%;
+}
+label {
+  font-size: 30pt;
+}
+button {
+  margin: auto;
+  width: 150px;
+  height: 100px;
+  padding: 10px;
+  align-items: flex-start;
+  align-content: flex-start;
+  font-size: 20pt;
+}
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #0c126f;
+  right: 100px;
+  justify-content: left;
+}
+.button1:hover {
+  background-color: #0c126f;
+  color: white;
+}
+table {
+  background-color: rgba(255, 255, 255, 0.18);
+  border: 3px rgba(255, 255, 255, 0.18);
+}
+.footer {
+  background-color: black;
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: left;
+  font-size: 30px;
 }

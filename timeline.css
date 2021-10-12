@@ -5,8 +5,10 @@
 
 /* Set a background color */
 body {
-  background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
+  background-image: url(/backgroundweb.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -132,8 +134,16 @@ body {
   }
 }
 ul {
-  text-align: center;
+  background: black;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
 }
+
 li {
   margin-right: 0%;
   display: inline-block;
@@ -183,8 +193,40 @@ h2 {
   background-color: brown;
   background-size: cover;
 }
-h1 {
+
+.footer {
+  background-color: black;
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   color: white;
-  background: black;
+  text-align: left;
+  font-size: 30px;
+  z-index: 5;
+}
+h1 {
+  padding-top: 113px;
+  font-size: 34pt;
+  color: rgb(252, 252, 252);
   text-align: center;
+  right: 0%;
+  font-family: Arial, Helvetica;
+  animation-name: slideright;
+  animation-duration: 3s;
+}
+@keyframes slideright {
+  from {
+    transform: translateX(800px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.logos {
+  border-radius: 100%;
+  width: 2%;
+  height: 2%;
+  position: relative;
 }
