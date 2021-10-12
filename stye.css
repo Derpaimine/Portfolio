@@ -62,6 +62,7 @@ img {
   height: 400px;
   border-radius: 25%;
 }
+
 li {
   margin-right: 0%;
   display: inline-block;
@@ -78,6 +79,30 @@ a {
 
 li:hover {
   background-color: gray;
+  padding: 20px;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: black;
+  }
+  20% {
+    background-color: grey;
+  }
+  40% {
+    background-color: black;
+  }
+  60% {
+    background-color: grey;
+  }
+  80% {
+    background-color: black;
+  }
+  100% {
+    background-color: grey;
+  }
 }
 p {
   padding: 10px;

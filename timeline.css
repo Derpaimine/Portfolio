@@ -150,8 +150,32 @@ a {
 
 li:hover {
   background-color: gray;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
   padding: 20px;
 }
+@keyframes pulse {
+  0% {
+    background-color: black;
+  }
+  20% {
+    background-color: grey;
+  }
+  40% {
+    background-color: black;
+  }
+  60% {
+    background-color: grey;
+  }
+  80% {
+    background-color: black;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+
 p {
   padding: 10px;
 }
