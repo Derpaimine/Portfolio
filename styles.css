@@ -113,11 +113,11 @@ img {
   border-radius: 100%;
   width: 400px;
   height: 400px;
-  background-color: rgb(192, 0, 209, 0.5);
   padding: 20px;
-  animation-name: Slideup;
-  animation-duration: 3s;
+  /* animation-name: Slideup; */
+  /* animation-duration: 3s; */
   animation-fill-mode: both;
+  animation: Slideup 3s, glow 1.5s infinite;
 }
 @keyframes Slideup {
   from {
@@ -174,8 +174,8 @@ div.section {
   background-color: black;
 }
 .text-align {
-  text-align: left;
-  margin: auto;
+  margin-right: 35%;
+  margin-left: 35%;
   width: 60%;
   padding: 10px;
   align-items: center;
@@ -255,4 +255,22 @@ table {
   color: white;
   text-align: left;
   font-size: 30px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+.glow {
+  animation-name: glow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes glow {
+  from {
+    background-color: rgb(192, 0, 209, 0.5);
+  }
+  to {
+    background-color: rgb(192, 0, 209, 1);
+  }
 }
